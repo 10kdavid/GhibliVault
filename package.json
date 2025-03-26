@@ -1,0 +1,19 @@
+{
+  "name": "ghiblivault",
+  "version": "1.0.0",
+  "description": "A museum of AI-generated Ghibli-style artwork",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'Build complete' && cp -r * ./public",
+    "vercel-build": "mkdir -p public && cp -r *.html *.css *.js *.jpg *.png ./public"
+  },
+  "keywords": [
+    "ghibli",
+    "ai",
+    "art",
+    "gallery"
+  ],
+  "author": "",
+  "license": "MIT"
+} 

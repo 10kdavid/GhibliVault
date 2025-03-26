@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhibliVault - AI Art Museum</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+    <meta name="description" content="GhibliVault - An immersive museum of AI-generated artwork in the style of Studio Ghibli">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-animation">
+            <div class="soot-sprite"></div>
+            <div class="loading-text">
+                <span>E</span>
+                <span>n</span>
+                <span>t</span>
+                <span>e</span>
+                <span>r</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+                <span>&nbsp;</span>
+                <span>G</span>
+                <span>h</span>
+                <span>i</span>
+                <span>b</span>
+                <span>l</span>
+                <span>i</span>
+                <span>V</span>
+                <span>a</span>
+                <span>u</span>
+                <span>l</span>
+                <span>t</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-wrapper">
+        <header>
+            <div class="logo-container">
+                <h1>GhibliVault</h1>
+                <div class="totoro-icon"></div>
+            </div>
+            <p class="tagline">A Museum of AI-Generated Ghibli Art</p>
+        </header>
+
+        <div class="floating-clouds">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+        </div>
+
+        <main>
+            <section class="intro">
+                <div class="intro-text">
+                    <h2>Welcome to the magical world of Ghibli-inspired AI art</h2>
+                    <p>Explore our curated collection of AI-generated images in the distinctive style of Studio Ghibli. Each piece captures the wonder, whimsy, and spirit of the beloved animation studio.</p>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="gallery-grid" id="gallery">
+                    <!-- Images will be loaded dynamically via JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <div class="dust-particles"></div>
+
+        <footer>
+            <p>GhibliVault © 2024 | A Museum of AI-Generated Ghibli-Style Artwork</p>
+        </footer>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-img" src="" alt="Enlarged view">
+            <div class="navigation">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html> 
